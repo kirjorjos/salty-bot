@@ -1,0 +1,20 @@
+{
+  "files": {
+    "commands/games/uno.js": [
+      {
+        "id": "a4dbdc43-0181-4500-8995-8cba42127761",
+        "line": 1,
+        "version": 1,
+        "index": 0
+      }
+    ],
+    "commands/utilities/say.js": [
+      {
+        "id": "d8dde928-564d-41a9-b2d9-016f50f1ae3c",
+        "line": 12,
+        "version": 15,
+        "index": 445
+      }
+    ]
+  }
+}
