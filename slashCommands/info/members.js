@@ -1,7 +1,3 @@
-let humanMembers = (guild) => {
-  console.log(guild);
-}
-
 module.exports = {
     usage: "members",
     description: "Returns member count for server",

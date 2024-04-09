@@ -3,6 +3,15 @@ module.exports = {
     description: "Returns latency and API ping",
     build: (command) => {
       command.addSubcommand(subcommand => 
+        subcommand.setName('suggestion')
+          .setDescription("Your suggestion")
+          .addStringOption(option =>
+            option.setName("suggestion")
+                .setDescription("Your suggestion")
+                .setRequired(true)
+          )
+      );
+      command.addSubcommand(subcommand => 
         subcommand.setName('accept')
         .setDescription('Accept a suggestion')
       );
@@ -10,11 +19,6 @@ module.exports = {
         subcommand.setName('deny')
         .setDescription('Deny a suggestion')
         );
-      command.addStringOption((option) => 
-        option.setName('suggestion')
-        .setDescription("You'r suggestion")
-        .setRequired(false)
-      );
       return command;
     },
     run: async (bot, interaction, args, Discord) => {

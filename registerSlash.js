@@ -3,7 +3,7 @@ module.exports = (bot) => {
   const { SlashCommandBuilder, ContextMenuCommandBuilder } = require('@discordjs/builders');
   const { REST } = require('@discordjs/rest');
   const { Routes } = require('discord-api-types/v9');
-  const { token } = process.env;
+  const { token } = bot.config.token || process.env;
   const guildId = bot.config.guildId;
   let clientId = bot.application.id;
   const commands = [];
